@@ -81,6 +81,44 @@ export const portfolioData = {
       features: ["JWT Authentication", "Stripe integration", "Admin dashboard"]
     }
   ],
+  hardwareProjects: [
+    {
+      id: "gesture-controller",
+      title: "Hand Gesture Controller",
+      type: "Embedded Systems / Robotics",
+      description: "Built a gesture-based PC controller using Arduino and Ultrasonic Sensors. Programmed in C++ and Python for real-time mouse control.",
+      tech: ["Arduino", "C++", "Python", "Ultrasonic Sensors", "PyAutoGUI"],
+      features: [
+        "Real-time hand movement capture",
+        "Seamless hands-free PC control",
+        "Serial communication for data transfer"
+      ]
+    },
+    {
+      id: "fire-fighting-robot",
+      title: "Fire Fighting Robot",
+      type: "Robotics / Embedded",
+      description: "Autonomous robot designed to detect and extinguish fires using flame and heat sensors integrated with motor control systems.",
+      tech: ["Embedded C", "Flame Sensors", "IR Sensors", "DC Motors"],
+      features: [
+        "Real-time decision making for navigation",
+        "Autonomous fire detection",
+        "Sensor fusion for obstacle avoidance"
+      ]
+    },
+    {
+      id: "nfc-attendance",
+      title: "NFC Attendance System",
+      type: "Real-Time Systems",
+      description: "Automated attendance system using NFC technology. Developed firmware in C++ for real-time card detection and data logging to Excel.",
+      tech: ["Arduino", "NFC Module", "C++", "Excel Automation"],
+      features: [
+        "Contactless identification",
+        "Real-time data processing",
+        "Automated record management & analysis"
+      ]
+    }
+  ],
   education: {
     degree: "B.E. Computer Systems Engineering",
     university: "Sukkur IBA University",

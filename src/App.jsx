@@ -24,7 +24,8 @@ function App() {
           <ul className="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#projects">Software</a></li>
+            <li><a href="#hardware">Hardware</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#certifications">Certifications</a></li>
@@ -154,6 +155,35 @@ function App() {
                   <div className="project-links">
                     <a href={project.github} target="_blank" rel="noreferrer" className="btn-link">GitHub <span>→</span></a>
                   </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Hardware Projects Section */}
+        <section id="hardware" className="section">
+          <div className="container">
+            <div className="section-header">
+              <h2 className="font-heading">Hardware & Robotics</h2>
+              <div className="underline"></div>
+            </div>
+            <div className="projects-grid">
+              {portfolioData.hardwareProjects.map((project) => (
+                <div key={project.id} className="project-card card glass">
+                  <div className="project-badge">{project.type}</div>
+                  <h3 className="project-title">{project.title}</h3>
+                  <p className="project-desc">{project.description}</p>
+                  <div className="project-tech">
+                    {project.tech.map((t, tIdx) => (
+                      <span key={tIdx} className="tech-tag">{t}</span>
+                    ))}
+                  </div>
+                  <ul className="project-features">
+                    {project.features.map((feature, fIdx) => (
+                      <li key={fIdx}>{feature}</li>
+                    ))}
+                  </ul>
                 </div>
               ))}
             </div>
